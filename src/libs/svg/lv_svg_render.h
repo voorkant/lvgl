@@ -12,9 +12,9 @@
 #include "../../lv_conf_internal.h"
 
 #if LV_USE_SVG
-#if !LV_USE_VECTOR_GRAPHIC
-#error "LV_USE_SVG requires LV_USE_VECTOR_GRAPHIC = 1"
-#endif
+    #if !LV_USE_VECTOR_GRAPHIC
+        #error "LV_USE_SVG requires LV_USE_VECTOR_GRAPHIC = 1"
+    #endif
 #endif
 
 #if LV_USE_SVG && LV_USE_VECTOR_GRAPHIC
